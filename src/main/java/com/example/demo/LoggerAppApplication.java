@@ -11,7 +11,7 @@ public class LoggerAppApplication {
 
 	public static void main(String[] args) {
 		ConfigurableApplicationContext context= SpringApplication.run(LoggerAppApplication.class, args);
-		System.out.println("done......")
+		System.out.println("done......");
 	UserService userService=  context.getBean(UserService.class);
 	userService.saveUser();
 	}
